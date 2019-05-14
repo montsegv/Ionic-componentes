@@ -16,12 +16,15 @@ export class DateTimePage implements OnInit {
   ngOnInit() {
     this.customPickerOptions = {
       buttons: [{
-        text: 'save',
-        handler: () => console.log ( 'Clicked Save')
+        text: 'Save',
+        handler: ( evento ) => {
+          console.log ( 'Clicked Save');
+          console.log (evento);
+        }
       }, {
         text: 'Log',
         handler: () => {
-          console.log ('Clicked Log. Do not Dismiss. ')
+          console.log ('Clicked Log. Do not Dismiss. ');
         }
       }]
     };

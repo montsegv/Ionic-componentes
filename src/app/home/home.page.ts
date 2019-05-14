@@ -29,7 +29,7 @@ export class HomePage implements OnInit {
       redirectTo: '/botones'
     },
     {
-      icon: 'Card',
+      icon: 'card',
       name: 'Cards',
       redirectTo: '/card'
     },
@@ -42,6 +42,11 @@ export class HomePage implements OnInit {
       icon: 'calendar',
       name: 'DateTime',
       redirectTo: '/date-time'
+    },
+    {
+      icon: 'car',
+      name: 'Fabs',
+      redirectTo: '/fab'
     }
   ];
 
