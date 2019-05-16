@@ -1,4 +1,4 @@
-<app-header titulo = "Fabs"></app-header>
+<app-header color = "header" titulo = "Fabs"></app-header>
 
 <ion-content>
 
@@ -9,22 +9,23 @@
 
   <!--Side: encima del boton al dar click-->
   <ion-fab-list side = "top">
-    <ion-fab-button><ion-icon name = "logo-facebook"></ion-icon></ion-fab-button>
-    <ion-fab-button><ion-icon name = "logo-whatsapp"></ion-icon></ion-fab-button>
-    <ion-fab-button><ion-icon name = "logo-twitter"></ion-icon></ion-fab-button>
+    <ion-fab-button color ="facebook"><ion-icon name = "logo-facebook"></ion-icon></ion-fab-button>
+    <ion-fab-button color = "whatsapp"><ion-icon name = "logo-whatsapp"></ion-icon></ion-fab-button>
+    <ion-fab-button color = "twitter"><ion-icon name = "logo-twitter"></ion-icon></ion-fab-button>
   </ion-fab-list>
 
   <ion-fab-list side = "start">
-      <ion-fab-button><ion-icon name = "logo-vimeo"></ion-icon></ion-fab-button>
-      <ion-fab-button><ion-icon name = "logo-google"></ion-icon></ion-fab-button>
-      <ion-fab-button><ion-icon name = "logo-github"></ion-icon></ion-fab-button>
-      <ion-fab-button><ion-icon name = "logo-youtube"></ion-icon></ion-fab-button>
+      <ion-fab-button color = "vimeo"><ion-icon name = "logo-vimeo"></ion-icon></ion-fab-button>
+      <ion-fab-button color = "google"><ion-icon name = "logo-google"></ion-icon></ion-fab-button>
+      <ion-fab-button color = "github"><ion-icon name = "logo-github"></ion-icon></ion-fab-button>
+      <ion-fab-button color ="youtube"><ion-icon name = "logo-youtube"></ion-icon></ion-fab-button>
     </ion-fab-list>
 
 
 </ion-fab>
 
   <ion-list>
+    <!--Ciclo for-->
     <ion-item *ngFor = "let i of data; let index = index">
       Item {{ index + 1 }}
     </ion-item>
@@ -34,7 +35,7 @@
 
 
 <ion-footer>
-  <ion-toolbar>
-    <ion-title> Este es el footer</ion-title>
+  <ion-toolbar color = "twitter">
+    <ion-title> Este es el footer, MIRALO</ion-title>
   </ion-toolbar>
 </ion-footer>
