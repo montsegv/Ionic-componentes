@@ -1,7 +1,7 @@
-<app-header titulo = "Grid/Row"></app-header>
+<app-header titulo = "Grid Row"></app-header>
 
-<ion-content padding>
-  <ion-grid>
+<ion-content padding fullscreen>
+  <ion-grid fixed>
 
    <!-- <ion-row>
       <ion-col *ngFor="let c of[1,1,1,1,1,1,1,1,1,1,1,1]; let i = index">
@@ -9,7 +9,10 @@
       </ion-col>
     </ion-row> -->
   <ion-row>
-    <ion-col *ngFor= "let c of [1,1,1,1,1,1,1,1,1,1,1,1];">
+
+      <!-- Definir total de columnas en pantalla. lg (pant. grande), md (pant. mediana)-->
+    <ion-col size = "12" size-lg= "3" size-md= "4" size-sm="6" size-xs="12"
+             *ngFor= "let c of [1,1,1,1,1,1,1,1,1,1,1,1];">
       <ion-card>
         <ion-img src="/assets/shapes.svg"></ion-img>
         <ion-card-header>
