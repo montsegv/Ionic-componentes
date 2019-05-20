@@ -8,12 +8,10 @@ import { IonInfiniteScroll } from '@ionic/angular';
 })
 export class InfiniteScrollPage implements OnInit {
 
-  //Para poder tomar elementos del HTML y trabajarlo en clase de angular
+  //Se usa cuando se necesita obtener algun elemento de html
   @ViewChild(IonInfiniteScroll) InfiniteScroll: IonInfiniteScroll;
 
   data: any[] = Array(20);
-
-  //Se usa cuando se necesita obtener algun elemento de html
 
   constructor() { }
 
@@ -28,7 +26,7 @@ export class InfiniteScrollPage implements OnInit {
 
       if ( this.data.length > 50) {
         event.target.complete();
-        this.InfiniteScroll.disabled = true;
+        this.InfiniteScroll.disabled = true; //Desabilitarlo
         return;
       }
 
