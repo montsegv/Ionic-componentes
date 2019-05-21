@@ -65,7 +65,7 @@ export class HomePage implements OnInit {
     },
     {
       icon: 'list',
-      name: 'Listas -Sliding',
+      name: 'Listas - Sliding',
       redirectTo: '/list'
     }
   ];
