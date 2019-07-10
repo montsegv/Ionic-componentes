@@ -14,6 +14,7 @@ export class SegmentPage implements OnInit {
   @ViewChild(IonSegment) segment: IonSegment;
 
   superHeroes: Observable<any>;
+  publisher = '';
 
   constructor( private dataService: DataService) { }
 
@@ -26,6 +27,15 @@ export class SegmentPage implements OnInit {
   segmentChanged( event ) {
 
     const valorSegmento = event.detail.value;
+
+    if (valorSegmento === 'todos') {
+      this.publisher = '';
+
+      return;
+    }
+
+    this.publisher = valorSegmento;
+
     console.log( valorSegmento );
   }
 
