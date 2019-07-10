@@ -22,9 +22,10 @@
 
 </ion-toolbar>
 
+
 <ion-content>
 
-  <ion-list>
+  <ion-list >
 
     <ion-item *ngFor = "let heroe of (superHeroes | async) | filtro: publisher: 'publisher'"
                class = "animated fadeIn fast">
@@ -37,6 +38,24 @@
 
       <ion-label slot= "end" text-right>
         {{heroe.publisher}}
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-list *ngIf = "(superHeroes | async) === null">
+
+    <ion-item *ngFor = "let item of [1,1,1,1,1,1,1,1,1]">
+      <ion-label>
+        <h3>
+          <ion-skeleton-text width = "70%"></ion-skeleton-text>
+        </h3>
+        <p>
+          <ion-skeleton-text width = "100%"></ion-skeleton-text>
+        </p>
+      </ion-label>
+      <ion-label slot="end">
+        <ion-skeleton-text width = "40px" float-right></ion-skeleton-text>
       </ion-label>
     </ion-item>
 
