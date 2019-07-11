@@ -27,7 +27,7 @@ export class DataService {
   getHeroes() {
     return this.http.get( '/assets/data/superheroes.json')
     .pipe(
-      delay(1500)
+      delay(2000)
     );
   }
 }
