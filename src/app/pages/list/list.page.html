@@ -1,10 +1,10 @@
-<app-header titulo = "Listas - Sliding"></app-header>
+<app-header titulo="Listas - Sliding"></app-header>
 
-<ion-content padding>
+<ion-content class="ion-padding">
 
   <ion-list #lista>
 
-    <ion-item-sliding *ngFor= "let user of usuarios | async">
+    <ion-item-sliding *ngFor="let user of usuarios | async">
 
       <ion-item >
         <ion-label>
@@ -14,7 +14,7 @@
           </p>
         </ion-label>
   
-        <ion-label slot = "end" text-right>
+        <ion-label slot="end" text-right>
           {{ user.phone}}
         </ion-label>
       </ion-item>
@@ -27,7 +27,7 @@
              <ion-icon  slot="icon-only" name="heart"></ion-icon>
            </ion-item-option>
           <ion-item-option color="tertiary" (click)="share(user)">
-            <ion-icon slot = "icon-only" name = "share"></ion-icon>
+            <ion-icon slot="icon-only" name="share"></ion-icon>
           </ion-item-option>
 
         </ion-item-options>
@@ -35,7 +35,7 @@
         <ion-item-options side="end">
 
           <ion-item-option color="danger" (click)="borrar(user)">
-            <ion-icon slot = "icon-only" name = "trash"></ion-icon>
+            <ion-icon slot="icon-only" name="trash"></ion-icon>
           </ion-item-option>
 
         </ion-item-options>

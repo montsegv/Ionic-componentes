@@ -1,20 +1,20 @@
 <ion-header no-border>
   <ion-toolbar>
 
-    <ion-buttons slot = "start">
-      <ion-back-button text = "Regresar" defaultHref = "/"></ion-back-button>
+    <ion-buttons slot="start">
+      <ion-back-button text="Regresar" defaultHref="/"></ion-back-button>
     </ion-buttons>
 
     <ion-title>Botones</ion-title>
 
-    <ion-buttons slot = "end">
+    <ion-buttons slot="end">
 
-      <ion-button color = "danger">
-        <ion-icon name ="logo-playstation"></ion-icon>
+      <ion-button color="danger">
+        <ion-icon name="logo-playstation"></ion-icon>
       </ion-button>
 
-      <ion-button color = "dark">
-          <ion-icon name ="logo-tux"></ion-icon>
+      <ion-button color="dark">
+          <ion-icon name="logo-tux"></ion-icon>
       </ion-button>
 
 
@@ -23,37 +23,37 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="ion-padding">
 
   <!-- BOTONES NORMALES -->
 
-  <ion-button size = "small" expand = "full"> Small </ion-button>
-  <ion-button size = "" expand = "full"> Default </ion-button>
-  <ion-button size = "large" expand = "full">Large</ion-button> 
+  <ion-button size="small" expand="full"> Small </ion-button>
+  <ion-button size="" expand="full"> Default </ion-button>
+  <ion-button size="large" expand="full">Large</ion-button> 
 
    <!-- Anchor (top-20 para eso) -->
 
-   <ion-button  class = "top-20" expand = "full" routerLink = "/alert" color = "danger">
+   <ion-button  class="top-20" expand="full" routerLink="/alert" color="danger">
      Anchor
    </ion-button>
 
    <!-- ion-row + ion-coll (poner dos botones en una misma linea)-->
-    <ion-row class = "top-20">
+    <ion-row class="top-20">
       <ion-col>
-          <ion-button expand = "full" routerLink = "/avatar" color = "warning">
+          <ion-button expand="full" routerLink="/avatar" color="warning">
             Avatar
           </ion-button>       
       </ion-col>
       <ion-col>
-          <ion-button expand = "full" routerLink = "/action-sheet" color = "tertiary">
+          <ion-button expand="full" routerLink="/action-sheet" color="tertiary">
             Action sheet 
           </ion-button>       
       </ion-col>
     </ion-row>
 
   <!-- FILL -->
-  <ion-button class = "top-20" fill = "clear"> Clear </ion-button>
-  <ion-button class = "top-20" fill = "outline"> Outline </ion-button>
-  <ion-button class = "top-20" fill = "solid"> Solid </ion-button>
+  <ion-button class="top-20" fill="clear"> Clear </ion-button>
+  <ion-button class="top-20" fill="outline"> Outline </ion-button>
+  <ion-button class="top-20" fill="solid"> Solid </ion-button>
 
 </ion-content>
